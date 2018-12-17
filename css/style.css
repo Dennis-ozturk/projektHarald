@@ -139,9 +139,37 @@ header{
   .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
   }
+
+
+  /* underBar */
+  .underBar .categories-btn {
+    display: none;
+  }
   
+  .underBar .categories-btn:checked ~ .categories {
+    max-height: 240px;
+  }
+  
+  .underBar .categories-btn:checked ~ .categories-icon .navicon {
+    background: transparent;
+  }
+  
+  .underBar .categories-btn:checked ~ .categories-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .underBar .categories-btn:checked ~ .categories-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .underBar .categories-btn:checked ~ .categories-icon:not(.steps) .navicon:before,
+  .underBar .categories-btn:checked ~ .categories-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+
   
   @media (min-width: 768px) {
+    /* menu */
     .header li {
       float: left;
     }
@@ -157,6 +185,10 @@ header{
       background-color: transparent;
       border-bottom: 1px solid #fff;
     }
+
+    .header .logo{
+      width: 100%;
+    }
     
     .header .menu {
       clear: none;
@@ -167,9 +199,138 @@ header{
       display: none;
     }
     .header ul {
-        background-color: transparent;
+      background-color: transparent;
 
     }
+    /* underBar */
+    .underBar li {
+      float: left;
+    }
+    .underBar li a {
+      padding: 20px 30px;
+      border: none;
+      color: #fff;
+      margin-top: 10px;
+    }
+
+    .underBar li a:hover,
+    .underBar .categories-btn:hover {
+      background-color: transparent;
+      border-bottom: 1px solid #fff;
+    }
+    
+    .categories {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .categories-icon {
+      display: none;
+    }
+    .underBar ul {
+      background-color: transparent;
+    } 
+    .underBar ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      overflow: hidden;
+      background-color: #fff;
+    }
+    
+    .underBar li a {
+      display: block;
+      padding: 20px 20px;
+      border-right: 1px solid #f4f4f4;
+      text-decoration: none;
+      color: #000;
+    }
+  
+    .underBar li a i {
+        padding: 10px;
+    }
+    
+    .underBar li a:hover,
+    .underBar .categories-btn:hover {
+      background-color: #f4f4f4;
+    }
+    
+    /* menu */
+    
+    .underBar .categories {
+      clear: both;
+      max-height: 0;
+      transition: max-height .2s ease-out;
+    }
+        
+    .underBar .categories-icon {
+      cursor: pointer;
+      display: inline-block;
+      float: left;
+      padding: 5px;
+      margin-top: 32px;
+      margin-right: 15px;
+      position: relative;
+      user-select: none;
+    }
+    
+    .underBar .categories-icon .navicon {
+      background: #fff;
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background .2s ease-out;
+      width: 18px;
+    }
+    
+    .underBar .categories-icon .navicon:before,
+    .underBar .categories-icon .navicon:after {
+      background: #fff;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      width: 100%;
+    }
+    
+    .underBar .categories-icon .navicon:before {
+      top: 5px;
+    }
+    
+    .underBar .categories-icon .navicon:after {
+      top: -5px;
+    }
+
+    
+  /* underBar icon */
+  .underBar .categories-btn {
+    display: none;
+  }
+  
+  .underBar .categories-btn:checked ~ .categories {
+    max-height: 240px;
+  }
+  
+  .underBar .categories-btn:checked ~ .categories-icon .navicon {
+    background: transparent;
+  }
+  
+  .underBar .categories-btn:checked ~ .categories-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .underBar .categories-btn:checked ~ .categories-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .underBar .categories-btn:checked ~ .categories-icon:not(.steps) .navicon:before,
+  .underBar .categories-btn:checked ~ .categories-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+
+    
+    
   }
 
 @media (max-width: 1024px){
