@@ -11,6 +11,7 @@ body, html{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat';
+    color: #555351;
 }
 
 .topBar{
@@ -22,7 +23,6 @@ header{
     width: 100%;
     z-index: 3;
     position: fixed;
-    background-color: #FFA500;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
 }
 
@@ -37,7 +37,6 @@ header{
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: #fff;
   }
   
   .header li a {
@@ -45,11 +44,16 @@ header{
     padding: 20px 20px;
     border-right: 1px solid #f4f4f4;
     text-decoration: none;
-    color: #000;
+    color: #555351;
   }
 
   .header li a i {
       padding: 10px;
+      color: #555351;
+  }
+
+  .header li{
+
   }
   
   .header li a:hover,
@@ -79,7 +83,7 @@ header{
     cursor: pointer;
     display: inline-block;
     float: right;
-    padding: 5px;
+    padding: 15px;
     margin-top: 32px;
     margin-right: 15px;
     position: relative;
@@ -87,7 +91,7 @@ header{
   }
   
   .header .menu-icon .navicon {
-    background: #fff;
+    background: #555351;
     display: block;
     height: 2px;
     position: relative;
@@ -97,7 +101,7 @@ header{
   
   .header .menu-icon .navicon:before,
   .header .menu-icon .navicon:after {
-    background: #fff;
+    background: #555351;
     content: '';
     display: block;
     height: 100%;
@@ -141,34 +145,7 @@ header{
     top: 0;
   }
 
-
-  /* underBar */
-  .underBar .categories-btn {
-    display: none;
-  }
-  
-  .underBar .categories-btn:checked ~ .categories {
-    max-height: 240px;
-  }
-  
-  .underBar .categories-btn:checked ~ .categories-icon .navicon {
-    background: transparent;
-  }
-  
-  .underBar .categories-btn:checked ~ .categories-icon .navicon:before {
-    transform: rotate(-45deg);
-  }
-  
-  .underBar .categories-btn:checked ~ .categories-icon .navicon:after {
-    transform: rotate(45deg);
-  }
-  
-  .underBar .categories-btn:checked ~ .categories-icon:not(.steps) .navicon:before,
-  .underBar .categories-btn:checked ~ .categories-icon:not(.steps) .navicon:after {
-    top: 0;
-  }
-
-  
+  /* Media query 768px */
   @media (min-width: 768px) {
     /* menu */
     .header li {
@@ -177,14 +154,14 @@ header{
     .header li a {
       padding: 20px 30px;
       border: none;
-      color: #fff;
+      color: #000;
       margin-top: 10px;
     }
 
     .header li a:hover,
     .header .menu-btn:hover {
       background-color: transparent;
-      border-bottom: 1px solid #fff;
+      border-bottom: 1px solid #555351;
     }
 
     .header .logo{
@@ -203,137 +180,9 @@ header{
       background-color: transparent;
 
     }
-    /* underBar */
-    .underBar li {
-      float: left;
-    }
-    .underBar li a {
-      padding: 20px 30px;
-      border: none;
-      color: #fff;
-      margin-top: 10px;
-    }
-
-    .underBar li a:hover,
-    .underBar .categories-btn:hover {
-      background-color: transparent;
-      border-bottom: 1px solid #fff;
-    }
-    
-    .categories {
-      clear: none;
-      float: right;
-      max-height: none;
-    }
-    .categories-icon {
-      display: none;
-    }
-    .underBar ul {
-      background-color: transparent;
-    } 
-    .underBar ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      overflow: hidden;
-      background-color: #fff;
-    }
-    
-    .underBar li a {
-      display: block;
-      padding: 20px 20px;
-      border-right: 1px solid #f4f4f4;
-      text-decoration: none;
-      color: #000;
-    }
-  
-    .underBar li a i {
-        padding: 10px;
-    }
-    
-    .underBar li a:hover,
-    .underBar .categories-btn:hover {
-      background-color: #f4f4f4;
-    }
-    
-    /* menu */
-    
-    .underBar .categories {
-      clear: both;
-      max-height: 0;
-      transition: max-height .2s ease-out;
-    }
-        
-    .underBar .categories-icon {
-      cursor: pointer;
-      display: inline-block;
-      float: left;
-      padding: 5px;
-      margin-top: 32px;
-      margin-right: 15px;
-      position: relative;
-      user-select: none;
-    }
-    
-    .underBar .categories-icon .navicon {
-      background: #fff;
-      display: block;
-      height: 2px;
-      position: relative;
-      transition: background .2s ease-out;
-      width: 18px;
-    }
-    
-    .underBar .categories-icon .navicon:before,
-    .underBar .categories-icon .navicon:after {
-      background: #fff;
-      content: '';
-      display: block;
-      height: 100%;
-      position: absolute;
-      transition: all .2s ease-out;
-      width: 100%;
-    }
-    
-    .underBar .categories-icon .navicon:before {
-      top: 5px;
-    }
-    
-    .underBar .categories-icon .navicon:after {
-      top: -5px;
-    }
-
-    
-  /* underBar icon */
-  .underBar .categories-btn {
-    display: none;
-  }
-  
-  .underBar .categories-btn:checked ~ .categories {
-    max-height: 240px;
-  }
-  
-  .underBar .categories-btn:checked ~ .categories-icon .navicon {
-    background: transparent;
-  }
-  
-  .underBar .categories-btn:checked ~ .categories-icon .navicon:before {
-    transform: rotate(-45deg);
-  }
-  
-  .underBar .categories-btn:checked ~ .categories-icon .navicon:after {
-    transform: rotate(45deg);
-  }
-  
-  .underBar .categories-btn:checked ~ .categories-icon:not(.steps) .navicon:before,
-  .underBar .categories-btn:checked ~ .categories-icon:not(.steps) .navicon:after {
-    top: 0;
   }
 
-    
-    
-  }
-
+/* Media query 1024px */
 @media (max-width: 1024px){
 
 }
