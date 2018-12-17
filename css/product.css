@@ -108,14 +108,19 @@ main {
     width: 300px;
     margin: auto;
 }
+
 .no_of_items {
+    padding: 0;
     text-align: center;
-    background-color: #FFFFFF;
     width: 7em;
+    margin: 0;
 }
 
 .amount_button {
     margin: 0;
+    padding: 0;
+    border: none;
+    background-color:  rgb(255, 209, 152);;
 }
 
 .buy_button_wrapper {
