@@ -9,26 +9,73 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 </head>
 <body>
+
+    <!-- TOP NAVIGATION -->
+    <section class="top-navigation">
+        <ul>
+            <li><i class="fas fa-phone"></i> (+46) 072-32 21 11 11</li>
+            <li><i class="fas fa-envelope"></i> manager@shop.se</li>
+        </ul> 
+
+        <ul>
+            <li><a href="#"><i class="fas fa-map-marked-alt"></i> Location</a></li>
+            <li><a href="#"><i class="fas fa-rss"></i> Blog</a></li>
+            <li><a href="#"><i class="fas fa-shield-alt"></i> Guarantee</a></li>
+            <li><a href="#"><i class="fas fa-credit-card"></i> Payment</a></li>
+            <li><a href="#"><i class="fas fa-truck"></i> Delivery</a></li>
+        </ul> 
+        
+        <ul>
+            <li><a href="#"><i class="fas fa-user"></i> Register or Sign in</a></li>
+        </ul>
+    </section>
+
     <!-- HEADER -->
     <header class="header">
-        <img class="logo" src="img/logo.svg" alt="">
+        <div class="row-1">
+            <img class="logo" src="img/logo.svg" alt="logo">
+            <!-- MOBILE -->
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 
-        <!-- Mobile -->
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <form action="#" class="search">
+                <input type="text" class="search-bar" placeholder="Search" name="" id="">
+                <button><i class="fas fa-search"></i></button>
+            </form>
 
-        <ul class="menu">
-            <li><a href="#"><i class="fas fa-phone"></i>Kontakta</a></li>
-            <!-- <li><a href="#"><i class="fas fa-tshirt"></i>Kategorier</a></li> -->
-            <!-- <li><a href="#"><i class="fas fa-rss-square"></i>Blog</a></li> -->
-        </ul>
+            <div class="information">
+                <span>7 days a week from <br> 8:00 am to 5:00 pm</span>
+                <a href="#"><i class="far fa-heart"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
 
-        <!-- Webb -->
-        <ul class="">
+            <ul class="menu">
+                <li><a href="#"><i class="fas fa-phone"></i>Contact us</a></li>
+            </ul>
+            
+        </div>
 
-        </ul>
-        
-      </header>
+        <nav class="row-2">
+             <!-- WEBB -->
+            <div class="row-2-1">
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <i class="fas fa-align-left"></i>
+                        <span>All Categories</span> 
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Unisex</a>
+                <a class="right" href="#">Contact us</a>
+            </div>
+        </nav>
+    </header>
 
     <!-- MAIN -->
     <main>
